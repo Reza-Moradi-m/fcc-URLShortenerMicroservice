@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      input {
+        padding: 8px;
+        margin: 5px;
+      }
+      button {
+        padding: 8px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <p>API Usage:</p>
+    <ul>
+      <li>POST a URL to <code>/api/shorturl</code> to receive a shortened URL.</li>
+      <li>Visit <code>/api/shorturl/:short_url</code> to be redirected to the original URL.</li>
+    </ul>
+    <p>Example Response:</p>
+    <pre>
+{
+  "original_url": "https://freeCodeCamp.org",
+  "short_url": 1
+}
+    </pre>
+  </body>
+</html>
